@@ -1,0 +1,51 @@
+(q1)Ramesh's basic salry is input through the keyboard. His dearness allowance is 40% of basic salary, and house ret allowance is 20% of basic salary. Write a program to calculate 
+his gross pay.
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    float bp,da,hr,total;
+    printf("Enter the basic salary");
+    scanf("%f",&bp);
+    da = 0.4*bp;
+    hr = 0.2*bp;
+    total = bp+da+hr;
+    printf("dearness allowance %f\n",da);
+    printf("house rent allowance %f\n",hr);
+    printf("Total gross pay %f",total);
+    return 0;
+}
+(q2)Enter the distance through the keyboard. And write a program to convert and print this distance in meters,feet,inches and centimeter.
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    float km,m,cm,ft,inch;
+    printf("Enter the distance in kilometer");
+    scanf("%f",&km);
+    m = km*1000;
+    cm = m*100;
+    inch = cm/2.54;
+    ft = inch/12;
+    printf("The distance in meter = %f\n ",m);
+    printf("The distance in centimeter = %f\n ",cm);
+    printf("The distance in inches = %f\n ",inch);
+    printf("The distance in feet = %f\n ",ft);
+    return 0;
+}
+(q3)If the marks obtained by a student in five differenr subjectsare input through the keyboard,write a program to find out aggregate marks and percentage marks obtained by the
+by the student.
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int m1,m2,m3,m4,m5,aggre;
+    float percent;
+    printf("Enter the marks of five subjects");
+    scanf("%d %d %d %d %d",&m1,&m2,&m3,&m4,&m5);
+    aggre=(m1+m2+m3+m4+m5);
+    percent=aggre/5;
+    printf("the aggregate mark of the student is %d\n",aggre);
+    printf("the percentage mark of the student is %f",percent);
+    return 0;
+}
