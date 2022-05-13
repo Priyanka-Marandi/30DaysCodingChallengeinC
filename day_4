@@ -1,0 +1,92 @@
+(q1)//Calculation of total expenses
+#include<stdio.h>
+int main()
+{
+    int qty,dis;
+    float rate,tot;
+    printf("Enter quantity and rate");
+    scanf("%d %f",&qty,&rate);
+    if(qty>1000)
+    dis=10;
+    else
+    dis=0;
+    tot=(qty*rate)-(qty*rate*dis/100);
+    printf("total expenses= Rs. %f\n",tot);
+    return 0;
+}
+(q2)//Calculation of gross salary
+#include<stdio.h>
+int main()
+{
+    float bs,gs,da,hra;
+    printf("Enter basic salary");
+    scanf("%f",&bs);
+    if(bs<1500)
+    {
+        hra = bs*10/100;
+        da = bs*9/100;
+    }
+    else
+    {
+        hra=500;
+        da = bs*98/100;
+    }
+    gs=bs+hra+da;
+    printf("Gross salary= Rs. %f\n",gs);
+    return 0;
+}
+(q3)//Calculate profit and loss
+#include<stdio.h>
+int main()
+{
+    float cp,sp,p,l;
+    printf("\n enter cost price and selling price:");
+    scanf("%f %f",&cp,&sp);
+    p=sp-cp;
+    l=cp-sp;
+    if(p>0)
+    printf("the seller made a profit of Rs. %f\n",p);
+    if(l>0)
+    printf("the seller incurred loss of Rs. %f\n",l);
+    if(p==0)
+    printf("the seller made no profit no loss \n");
+    return 0;
+}
+(q4)//Check whether a number is even or odd
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("\n Enter a number");
+    scanf("%d",&n);
+    if(n%2==0)
+    printf("the number is even\n");
+    else
+    printf("the number is odd\n");
+    
+    return 0;
+}
+(q5)//check whether the given year is leap year or not
+#include<stdio.h>
+int main()
+{
+    int yr;
+    printf("\n Enter a year");
+    scanf("%d",&yr);
+    if(yr%100==0)
+   {
+       if(yr%400==0)
+       printf("leap year\n");
+       else
+       printf("not leap year\n");
+   }
+   else
+   {
+     if(yr%4==0)
+       printf("leap year\n");
+       else
+       printf("not leap year\n");   
+   }
+    
+    return 0;
+}
