@@ -1,0 +1,198 @@
+(q1)/*enter 5 digit number through keyboard and compare whether original number and reverse number are equal*/
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int n,d5,d4,d3,d2,d1,rev;
+    printf("Enter the 5-digit number\t");
+    scanf("%d",&n);
+    d5=n%10;//for fifth digit number
+    n=n/10;
+    d4=n%10;//for fourth digit number
+    n=n/10;
+    d3=n%10;//for third digit number
+    n=n/10;
+    d2=n%10;//for two digit number
+    n=n/10;
+    d1=n%10;//for one digit number
+    n=n/10;
+    rev=10000*d5+1000*d4+100*d3+10*d2+1*d1;
+    printf("the reverse number is %d\n",rev);
+    if(n==rev)
+    printf("they are equal\n");
+    else
+    printf("they are not equal\n");
+    return 0;
+}
+(q2)/*enter the age of Ram,Shyam and Ajay and then determine who is the youngest*/
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int age1,age2,age3;
+    printf("enter the age of Ram\n");
+    scanf("%d",&age1);
+    printf("enter the age of Shyam\n");
+    scanf("%d",&age2);
+    printf("enter the age of Ajay\n");
+    scanf("%d",&age3);
+    if(age1<=age2 &&age1<=age3)
+    {
+        printf("Ram is youngest %d\n",age1);
+    }
+    if(age2<=age1 && age2<=age3)
+    {
+        printf("Shyam is youngest %d\n",age2);
+    }
+    if(age3<=age1 && age3<=age2)
+    {
+        printf("Ajay is youngest %d\n",age3);
+    }
+    return 0;
+}
+(q3)/*enter the angle of the triangle and then determine whether it is triangle or not*/
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int s1,s2,s3,sum=0;
+    printf("enter the angle of the triangle of side1\n");
+    scanf("%d",&s1);
+    printf("enter the angle of the triangle of side2\n");
+    scanf("%d",&s2);
+    printf("enter the angle of the triangle of side3\n");
+    scanf("%d",&s3);
+    sum=sum+s1+s2+s3;
+    if(sum==180)
+    {
+        printf("it is a triangle %d\n",sum);
+    }
+    else
+    {
+        printf("it is not a triangle %d\n",sum);    
+    }
+    return 0;
+}
+(q4)/*enter the number and find the absolute value of the number*/
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+int main()
+{
+   int n,m;
+   printf("Enter the number\n");
+   scanf("%d",&n);
+    m = abs(  n);
+   printf("the absolute value of %d is %d",n,m);
+    return 0;
+}
+(q5)/*enter the length and breadth of a rectangle and find the area and perimeter of a rectange and also see whether area
+is greater than perimeter*/
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+   int l,b,area,perimeter;
+   printf("Enter the length and breadth\n");
+   scanf("%d %d",&l,&b);
+    area=l*b;
+    perimeter=2*(l+b);
+    printf("area of a rectangle %d\n",area);
+    printf("perimeter of a rectangle %d\n",perimeter);
+    if(area>=perimeter)
+    {
+        printf("area is greater than perimeter %d\n",area);
+    }
+    else
+    {
+        printf("perimeter is greater than area %d\n",perimeter);
+    }
+    return 0;
+}
+(q6)
+/*Enter three point and check whether they form straight line or not*/
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+   int x1,x3,x2,y1,y2,y3,m,n;
+   printf("enter the points for(x1,y1)\n");
+   scanf("%d %d",&x1,&y1);
+   printf("enter the points for(x2,y2)\n");
+   scanf("%d %d",&x2,&y2);
+   printf("enter the points for(x3,y3)\n");
+   scanf("%d %d",&x3,&y3);
+   m=(y2-y1)/(x2-x1);
+   n=(y3-y2)/(x3-x2);
+   printf("the value of m and n is %d\t%d\n",m,n);
+   if(m==n)
+   {
+       printf("they lie in straight line\n");
+   }
+   else
+   {
+       printf("they do not lie in same line\n");
+   }
+    return 0;
+}
+(q7)/*Enter  point and check whether they lie inside a circle,on the circle or outside the circle or not*/
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int main()
+{
+   int x,y,h,k,d,r,a,b;
+   printf("enter the points for(x,y)\n");
+   scanf("%d %d",&x,&y);
+   printf("enter  the center points \n");
+   scanf("%d %d",&h,&k);
+   printf("enter  the radius of a circle ");
+   scanf("%d ",&r);
+   a=x-h;
+   b=y-k;
+   d=sqrt(pow(a,2)+pow(b,2));
+   printf("the value of a and b is %d\t%d\n",a,b);
+   printf("the value of d is %d\n",d);
+   if(d<r)
+   {
+       printf("they lie inside a circle\n");
+   }
+   if(d>r)
+   {
+       printf("they  lie outside a circle\n");
+   }
+   if(d==r)
+   {
+       printf("they lie on the circle\n");
+   }
+    return 0;
+}
+(q8)/*Enter  point and check whether they lie on the x-axis, y-axis or on the origin or not*/
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int main()
+{
+   int x,y,h,k,d,r,a,b;
+   printf("enter the points for(x,y)\n");
+   scanf("%d %d",&x,&y);
+   if(x==0 &&y==0)
+   {
+       printf("they lie on the origin\n");
+   }
+   if(x==0 &&y>0)
+   {
+       printf("they lie on the y-axis\n");
+   }
+   if(x>0 &&y==0)
+   {
+       printf("they lie on the x-axis\n");
+   }
+   else
+   {
+       printf("they have some coordinates\n");
+   }
+    return 0;
+}
