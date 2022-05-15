@@ -1,0 +1,25 @@
+/* find armstrong number*/
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int num,n=0,rem;
+    float r=0.0;
+    printf("Enter the number");
+    scanf("%d",&num);
+    int on=num;
+    for(on=n;on!=0;++n)
+    {
+        on/=10;
+    }
+   for(on=n;on!=0;on/=10) {
+       rem= on%10;
+       r+=pow(rem,n);
+       printf("the result %f\n",r);
+   }
+   if((int)r==num)
+   printf("it is armstrong number\n");
+   else
+   printf("it is not\n");
+   return 0;
+}
