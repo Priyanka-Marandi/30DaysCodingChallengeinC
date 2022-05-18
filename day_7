@@ -1,1 +1,68 @@
+(q1)/*Check whether a year is leap or not*/
+#include<stdio.h>
+int main()
+{
+    int year;
+    printf("\n Enter year:");
+    scanf("%d",&year);
+    if(year%400==0 || year %100!=0 && year %4 ==0)
+    printf("leap year\n");
+    else
+    printf("not a leap year\n");
+    return 0;
+}
+(q2)/*Check type of character entered from the keyboard*/
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("\n Enter character from keyboard:");
+    scanf("%c",&ch);
+    if(ch>=65 && ch<=90)
+    printf("Uppercase letter\n");
+    if(ch>=97 && ch<=122)
+    printf("lowercase letter\n");
+    if(ch>=48 && ch<=57)
+    printf("Digit\n");
+    if((ch>=0&&ch<48)||(ch>57&&ch<65)||(ch>90&&ch<97)||ch>122)
+    printf("special symbol\n");
+    
+    return 0;
+}
+(q3)/*Check whether triangle is valid or not*/
+#include<stdio.h>
+int main()
+{
+    int s1,s2,s3,ls,sum;
+    printf("\nEnter three sides of the triangle:");
+    scanf("%d %d %d",&s1,&s2,&s3);
+    if(s1>s2)
+    {
+        if(s1>s3)
+        {
+            sum=s2+s3; //largestside is s1
+        }
+        else
+        {
+            sum=s1+s2;//largest side is s3
+        }
+    }
+    else
+    {
+        if(s2>s3)
+        {
+            sum=s1+s3;// largest side is s2
+        }
+        else
+        {
+            sum=s1+s2;//largest side is s3
+        }
+    }
+    if(sum>ls)
+    printf("valid triangle\n");
+    else
+    printf("not valid triangle\n");
+    
+    return 0;
+}
 
