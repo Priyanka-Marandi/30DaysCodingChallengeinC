@@ -3,5 +3,5 @@
 ***hello I am priyanka*** 
 
 ## TIMELINE
-| DAY | DATE | CONTENT | REFERENCE LINK|
-|-----|------|---------|---------------|
+|   DAY   |   DATE   |           CONTENT           |           REFERENCE LINK          |
+|---------|----------|-----------------------------|-----------------------------------|
