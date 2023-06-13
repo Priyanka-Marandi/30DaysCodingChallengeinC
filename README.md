@@ -3,5 +3,5 @@
 ***hello I am priyanka*** 
 
 ## TIMELINE
-|   DAY   |   DATE   |           CONTENT :steam_locomotive:           |           REFERENCE LINK          |
-|---------|----------|-----------------------------|-----------------------------------|
+|   DAY   |   DATE   |           CONTENT AND LESSON TASKS PERFORMEND :steam_locomotive:           |           REFERENCE LINK          |
+|---------|----------|----------------------------------------------------------------------------|-----------------------------------|
