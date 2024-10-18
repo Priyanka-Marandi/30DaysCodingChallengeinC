@@ -5,4 +5,4 @@
 ## TIMELINE
 |   DAY📑   |   DATE⏳   |           CONTENT AND LESSON TASKS PERFORMEND :steam_locomotive:           |           REFERENCE LINK :dart:         |
 |---------|----------|----------------------------------------------------------------------------|-----------------------------------|
-|Day 1|   |  18.10.2024      |     basic of c programming |
+|Day 1|     18.10.2024      |     basic of c programming ||
