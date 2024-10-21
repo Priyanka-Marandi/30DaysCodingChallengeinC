@@ -4,7 +4,7 @@ Expected Output:
 Name   : Alexandra Abramov  
 DOB    : July 14, 1975  
 Mobile : 99-9999999999
-Solution:::::
+**Solution:::::
 # include<stdio.h>
 int main(void)
 {
@@ -17,3 +17,99 @@ int main(void)
 **q2. Write a C program to get the C version you are using.
 Expected Output:
 We are using C18!
+**Solution::::
+# include<stdio.h>
+int main(void)
+{
+    printf("We are using c18!  \n ");
+    
+    
+    return 0;
+    
+}
+**q3.3. Write a C program to print a block F using the hash (#), where the F has a height of six characters and width of five and four characters. And also print a very large 'C'.
+Expected Output:
+
+######
+#
+#
+#####
+#
+#
+#
+**Solution::::
+# include<stdio.h>
+int main(void)
+{
+    printf("######\n ");
+    printf("# \n");
+    printf("# \n");
+    printf("##### \n");
+    printf("# \n");
+    printf("# \n");
+    printf("# ");
+    
+    return 0;
+    
+}
+    ######
+  ##      ##
+ #
+ #
+ #
+ #
+ #
+  ##      ##
+    ######
+**Solution::::
+# include<stdio.h>
+int main(void)
+{
+    printf(" \t\t######\n ");
+    printf("##\t\t\t\t##\n");
+    printf("# \n");
+    printf("# \n");
+    printf("# \n");
+    printf("# \n");
+    printf("#\n ");
+    printf("##\t\t\t\t##\n");
+    printf(" \t\t######\n ");
+    
+    
+    return 0;
+    
+}
+**q4.. Write a C program to print the following characters in reverse.
+Test Characters: 'X', 'M', 'L'
+Expected Output:
+The reverse of XML is LMX
+**Solution::::
+# include<stdio.h>
+int main(void)
+{
+    printf(" %c%c%c ",'X','M','L');
+    printf(" The reverse of XML is %c%c%c",'L','M','X');
+    
+    
+    
+    return 0;
+    
+}
+**q5.Write a C program to compute the perimeter and area of a rectangle with a height of 7 inches and width of 5 inches.
+Expected Output:
+Perimeter of the rectangle = 24 inches
+Area of the rectangle = 35 square inches
+**Solution::::
+# include<stdio.h>
+int main(void)
+{
+    int a=7,b=5;
+    printf(" Perimeter of the rectangle is = %d inches\n",2*(a+b));
+    printf(" Area of the rectangle is = %d inches",a*b);
+    
+    
+    
+    return 0;
+    
+}
+
