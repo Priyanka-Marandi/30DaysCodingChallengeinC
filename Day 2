@@ -1,0 +1,19 @@
+**q1. . Write a C program to print your name, date of birth, and mobile number.
+Expected Output:
+
+Name   : Alexandra Abramov  
+DOB    : July 14, 1975  
+Mobile : 99-9999999999
+Solution:::::
+# include<stdio.h>
+int main(void)
+{
+    printf("Name   : Alexandra Abramov  \n ");
+    printf("DOB :%s %d, %d\n,","July", 14, 1975);
+    printf("Mobile : %d-%ld",99,9999999999);
+    return 0;
+    
+}
+**q2. Write a C program to get the C version you are using.
+Expected Output:
+We are using C18!
