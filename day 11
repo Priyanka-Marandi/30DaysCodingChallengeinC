@@ -1,0 +1,25 @@
+|basic of c programming|
+  1. c hello world programming
+  #include<stdio.h>
+  int main()
+{
+  printf("Hello World\n"):
+  return 0;
+}
+2. c print your name
+  #include<stdio.h>
+  int main()
+{
+  printf("Name: Priyanka Marandi\n");
+  return 0;
+}
+3. c program to print an integer entered by the users.
+  #include<stdio.h>
+  int main()
+{
+  int a;
+  printf("Enter the number: \n");
+  scanf("%d",&a);
+  printf(" the value of a",a);
+  return 0;
+}
