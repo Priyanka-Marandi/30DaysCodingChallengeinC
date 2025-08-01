@@ -20,6 +20,6 @@
   int a;
   printf("Enter the number: \n");
   scanf("%d",&a);
-  printf(" the value of a",a);
+  printf(" the value of a %d",a);
   return 0;
 }
